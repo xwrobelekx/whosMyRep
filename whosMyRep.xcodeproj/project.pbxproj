@@ -13,6 +13,10 @@
 		3B1E664E213DD62E0019CFB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B1E664C213DD62E0019CFB7 /* LaunchScreen.storyboard */; };
 		3B1E665B213DDCE30019CFB7 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1E665A213DDCE30019CFB7 /* File.swift */; };
 		3B1E665D213DE0C40019CFB7 /* StatesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1E665C213DE0C40019CFB7 /* StatesList.swift */; };
+		3B1E665F213DE63E0019CFB7 /* StateListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1E665E213DE63E0019CFB7 /* StateListTableViewController.swift */; };
+		3B1E6661213DE64E0019CFB7 /* RepresentativeListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1E6660213DE64E0019CFB7 /* RepresentativeListTableViewController.swift */; };
+		3B1E6663213DE65F0019CFB7 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1E6662213DE65F0019CFB7 /* DetailsViewController.swift */; };
+		3B1E6665213DE7000019CFB7 /* RepModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1E6664213DE7000019CFB7 /* RepModelController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		3B1E664F213DD62E0019CFB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B1E665A213DDCE30019CFB7 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		3B1E665C213DE0C40019CFB7 /* StatesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatesList.swift; sourceTree = "<group>"; };
+		3B1E665E213DE63E0019CFB7 /* StateListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateListTableViewController.swift; sourceTree = "<group>"; };
+		3B1E6660213DE64E0019CFB7 /* RepresentativeListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepresentativeListTableViewController.swift; sourceTree = "<group>"; };
+		3B1E6662213DE65F0019CFB7 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		3B1E6664213DE7000019CFB7 /* RepModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepModelController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +104,9 @@
 		3B1E6658213DDAA00019CFB7 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				3B1E665E213DE63E0019CFB7 /* StateListTableViewController.swift */,
+				3B1E6660213DE64E0019CFB7 /* RepresentativeListTableViewController.swift */,
+				3B1E6662213DE65F0019CFB7 /* DetailsViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -103,6 +114,7 @@
 		3B1E6659213DDABB0019CFB7 /* ModelController */ = {
 			isa = PBXGroup;
 			children = (
+				3B1E6664213DE7000019CFB7 /* RepModelController.swift */,
 			);
 			path = ModelController;
 			sourceTree = "<group>";
@@ -178,9 +190,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B1E6661213DE64E0019CFB7 /* RepresentativeListTableViewController.swift in Sources */,
 				3B1E665D213DE0C40019CFB7 /* StatesList.swift in Sources */,
+				3B1E665F213DE63E0019CFB7 /* StateListTableViewController.swift in Sources */,
+				3B1E6665213DE7000019CFB7 /* RepModelController.swift in Sources */,
 				3B1E6644213DD62D0019CFB7 /* AppDelegate.swift in Sources */,
 				3B1E665B213DDCE30019CFB7 /* File.swift in Sources */,
+				3B1E6663213DE65F0019CFB7 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,7 +342,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5EAUJPVR66;
-				INFOPLIST_FILE = whosMyRep/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/whosMyRep/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -344,7 +360,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5EAUJPVR66;
-				INFOPLIST_FILE = whosMyRep/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/whosMyRep/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
