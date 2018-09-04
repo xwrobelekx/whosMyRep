@@ -36,7 +36,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="7X7-JG-Xjg" kind="show" id="6PJ-yg-uaR"/>
+                                    <segue destination="7X7-JG-Xjg" kind="show" identifier="toRepTVC" id="6PJ-yg-uaR"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -60,7 +60,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="sne-uA-0tL" style="IBUITableViewCellStyleDefault" id="142-Za-NQe">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RepCell" textLabel="sne-uA-0tL" style="IBUITableViewCellStyleDefault" id="142-Za-NQe">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="142-Za-NQe" id="qn3-Ow-SYH">
@@ -77,7 +77,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="8TU-BB-z9c" kind="show" id="JmD-g6-11T"/>
+                                    <segue destination="8TU-BB-z9c" kind="show" identifier="toDetailView" id="JmD-g6-11T"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -156,6 +156,15 @@
                         <viewLayoutGuide key="safeArea" id="nae-HC-zYm"/>
                     </view>
                     <navigationItem key="navigationItem" title="Details" id="u3w-PR-i2T"/>
+                    <connections>
+                        <outlet property="addressLabel" destination="GOc-lc-Oms" id="zMK-As-HbE"/>
+                        <outlet property="districtLabel" destination="iQh-UA-voG" id="fGu-U0-Oq6"/>
+                        <outlet property="nameLabel" destination="s5D-EQ-T7E" id="Jcd-SD-UgV"/>
+                        <outlet property="partyLabel" destination="IZH-ie-22r" id="bRy-OZ-LjX"/>
+                        <outlet property="stateLabel" destination="T7l-vy-OQl" id="trj-Jq-RTE"/>
+                        <outlet property="telepgoneLabel" destination="0NR-dM-To8" id="YDk-8Y-cFw"/>
+                        <outlet property="websiteLabel" destination="irL-3a-n2j" id="STt-6b-dfg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1XG-ss-6aR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

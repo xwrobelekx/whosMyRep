@@ -11,7 +11,7 @@
 		3B1E6649213DD62D0019CFB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B1E6647213DD62D0019CFB7 /* Main.storyboard */; };
 		3B1E664B213DD62E0019CFB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B1E664A213DD62E0019CFB7 /* Assets.xcassets */; };
 		3B1E664E213DD62E0019CFB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B1E664C213DD62E0019CFB7 /* LaunchScreen.storyboard */; };
-		3B1E665B213DDCE30019CFB7 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1E665A213DDCE30019CFB7 /* File.swift */; };
+		3B1E665B213DDCE30019CFB7 /* Representative.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1E665A213DDCE30019CFB7 /* Representative.swift */; };
 		3B1E665D213DE0C40019CFB7 /* StatesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1E665C213DE0C40019CFB7 /* StatesList.swift */; };
 		3B1E665F213DE63E0019CFB7 /* StateListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1E665E213DE63E0019CFB7 /* StateListTableViewController.swift */; };
 		3B1E6661213DE64E0019CFB7 /* RepresentativeListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1E6660213DE64E0019CFB7 /* RepresentativeListTableViewController.swift */; };
@@ -26,7 +26,7 @@
 		3B1E664A213DD62E0019CFB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B1E664D213DD62E0019CFB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B1E664F213DD62E0019CFB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3B1E665A213DDCE30019CFB7 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		3B1E665A213DDCE30019CFB7 /* Representative.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Representative.swift; sourceTree = "<group>"; };
 		3B1E665C213DE0C40019CFB7 /* StatesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatesList.swift; sourceTree = "<group>"; };
 		3B1E665E213DE63E0019CFB7 /* StateListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateListTableViewController.swift; sourceTree = "<group>"; };
 		3B1E6660213DE64E0019CFB7 /* RepresentativeListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepresentativeListTableViewController.swift; sourceTree = "<group>"; };
@@ -95,7 +95,7 @@
 		3B1E6657213DDA9B0019CFB7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				3B1E665A213DDCE30019CFB7 /* File.swift */,
+				3B1E665A213DDCE30019CFB7 /* Representative.swift */,
 				3B1E665C213DE0C40019CFB7 /* StatesList.swift */,
 			);
 			path = Model;
@@ -195,7 +195,7 @@
 				3B1E665F213DE63E0019CFB7 /* StateListTableViewController.swift in Sources */,
 				3B1E6665213DE7000019CFB7 /* RepModelController.swift in Sources */,
 				3B1E6644213DD62D0019CFB7 /* AppDelegate.swift in Sources */,
-				3B1E665B213DDCE30019CFB7 /* File.swift in Sources */,
+				3B1E665B213DDCE30019CFB7 /* Representative.swift in Sources */,
 				3B1E6663213DE65F0019CFB7 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

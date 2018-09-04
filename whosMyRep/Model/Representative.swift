@@ -11,7 +11,7 @@ import Foundation
 
 struct ResultForGivenState: Codable {
     
-    let result : [Representative]
+    let results : [Representative]
     
 }
 

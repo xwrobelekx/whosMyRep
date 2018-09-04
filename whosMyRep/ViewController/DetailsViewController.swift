@@ -9,27 +9,43 @@
 import UIKit
 
 class DetailsViewController: UIViewController {
+    
+    var repInfo: Representative? {
+        didSet{
+            print("is it on main tread: \(Thread.isMainThread)")
+            updateLabels()
+        }
+    }
+    
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var partyLabel: UILabel!
+    @IBOutlet weak var stateLabel: UILabel!
+    @IBOutlet weak var districtLabel: UILabel!
+    @IBOutlet weak var addressLabel: UILabel!
+    @IBOutlet weak var telepgoneLabel: UILabel!
+    @IBOutlet weak var websiteLabel: UILabel!
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func updateLabels() {
+        guard let rep = repInfo else {return}
+        
+        
+        DispatchQueue.main.async {
+        self.nameLabel.text = rep.name
+        self.partyLabel.text = rep.party
+        self.stateLabel.text = rep.state
+        self.districtLabel.text = rep.district
+        self.addressLabel.text = rep.office
+        self.telepgoneLabel.text = rep.phone
+        self.websiteLabel.text = rep.link
+        }
+        
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
