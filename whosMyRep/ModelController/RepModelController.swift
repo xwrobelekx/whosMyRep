@@ -17,10 +17,9 @@ class RepModelController {
     
     //url
     //https://whoismyrepresentative.com/getall_reps_bystate.php?state=NJ&output=json
-    //https://whoismyrepresentative.com/getall_reps_bystate.php?state=AL&output=json
+    
     
     private let baseURLString = "https://whoismyrepresentative.com/getall_reps_bystate.php?"
-    
     func fetchRepresentatives(stateCode: String, completion: @escaping ([Representative]?) -> Void) {
         
         guard let baseURL = URL(string: baseURLString) else {
@@ -28,13 +27,10 @@ class RepModelController {
         }
         
         let newURL = baseURL
-        
         var components = URLComponents(url: newURL, resolvingAgainstBaseURL: true)
         //querry item = (name: "state", value: stateCode) -> state=NJ
         let queryItemOne = URLQueryItem(name: "state", value: stateCode)
-        //FIXME: make sure i have "&" in url
         // hot to generate this: &output=json to make sure i have the "&" in between
-        
         let queryItemTwo = URLQueryItem(name: "output", value: "json")
         
         components?.queryItems = [queryItemOne, queryItemTwo]
@@ -70,8 +66,8 @@ class RepModelController {
              before passing the fixed UTF-8 data into the JSON decoder.
              */
             
-             let asciiStringFromData = String(data: dataThatCameback, encoding: .ascii)
-             let dataAsUTF8 = Data(asciiStringFromData!.utf8)
+            let asciiStringFromData = String(data: dataThatCameback, encoding: .ascii)
+            let dataAsUTF8 = Data(asciiStringFromData!.utf8)
             
             
             do {
@@ -82,6 +78,6 @@ class RepModelController {
                 completion([])
                 return
             }
-        }.resume()
+            }.resume()
     }
 }
